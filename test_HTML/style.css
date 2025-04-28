@@ -1,0 +1,179 @@
+/* style.css */
+:root {
+    --main-pink: #FFB6C1;
+    --accent-pink: #FF69B4;
+    --text-color: #8B475D;
+}
+
+body {
+    background: linear-gradient(135deg, var(--main-pink) 0%, #FFE4E1 100%);
+    font-family: 'Comic Sans MS', 'Apple SD Gothic Neo', cursive;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--accent-pink);
+    font-size: 2.8em;
+    margin: 30px 0;
+    text-shadow: 2px 2px 0 rgba(255,255,255,0.5);
+}
+
+/* 成员容器 */
+.members-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 成员卡片 */
+.member-profile {
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    margin: 25px 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.1);
+    transition: all 0.3s ease;
+}
+
+.member-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255,105,180,0.2);
+}
+
+/* 成员照片 */
+.member-photo {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid var(--accent-pink);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* 文字信息 */
+.member-info h2 {
+    color: var(--text-color);
+    margin: 0 0 10px;
+    font-size: 1.8em;
+}
+
+.member-info p {
+    color: var(--text-color);
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* 团体照区域 */
+.group-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.group-photo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.group-section h2 {
+    color: var(--accent-pink);
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .member-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .member-photo {
+        width: 70%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-photo {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .group-section h2 {
+        font-size: 1.8em;
+    }
+}
+
+.external-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link-card {
+    background: linear-gradient(145deg, #ffb6c1, #ff8fab);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.link-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.link-card i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 官方页面样式 */
+.official-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+}
+
+.info-box {
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.1);
+}
+
+button {
+    background: var(--accent-pink);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
