@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>少女时代 ❤ SONE （FJK best!!!）</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --main-pink: #FFB6C1;
+            --accent-pink: #FF69B4;
+            --text-color: #8B475D;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--main-pink) 0%, #FFE4E1 100%);
+            font-family: 'Comic Sans MS', 'Apple SD Gothic Neo', cursive;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 成员卡片容器 */
+        .members-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        /* 单个成员区块 */
+        .member-profile {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            margin: 20px 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 25px;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(255,105,180,0.1);
+            transition: transform 0.3s;
+        }
+
+        .member-profile:hover {
+            transform: translateY(-3px);
+        }
+
+        /* 成员照片 */
+        .member-photo {
+            width: 100%;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 3px solid var(--accent-pink);
+        }
+
+        /* 团体照区域 */
+        .group-photo-section {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .group-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 5px solid white;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .member-profile {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .member-photo {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .member-photo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>少女时代 💖</h1>
+
+    <div class="members-container">
+        <!-- 泰妍 -->
+        <div class="member-profile">
+            <img src="image/taeyeon.jpg" alt="Taeyeon" class="member-photo">
+            <div>
+                <h2>金泰妍 Taeyeon 💎</h2>
+                <p>队长 / 金抽抽</p>
+                <p>✨ 女solo一</p>
+            </div>
+        </div>
+
+        <!-- Jessica -->
+        <div class="member-profile">
+            <img src="image/jessica.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>郑秀妍 Jessica ❄️</h2>
+                <p>冰山公主 / 钻石音色</p>
+                <p>✨ 南韩唯一钻石音色</p>
+            </div>
+        </div>
+
+        <!-- Sunny -->
+        <div class="member-profile">
+            <img src="image/sunny.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>李顺圭 Sunny ☀</h2>
+                <p>活力素 / 佛系社长</p>
+                <p>✨ 佛系社长 现在是真社长了！</p>
+            </div>
+        </div>
+
+        <!-- Tiffany -->
+        <div class="member-profile">
+            <img src="image/Tiffany.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>黄美英 Tiffany ❄️</h2>
+                <p>笑眼帕尼 / 粉红猪</p>
+                <p>✨ 团内唯一女孩子 团妻</p>
+            </div>
+        </div>
+
+        <!-- Hyoyeon -->
+        <div class="member-profile">
+            <img src="image/hyo.png" alt="Jessica" class="member-photo">
+            <div>
+                <h2>金孝渊 Hyoyeon ❄️</h2>
+                <p>跳舞机器 / 舞后</p>
+                <p>✨ 快捂住她的嘴 什么话都敢说</p>
+            </div>
+        </div>
+
+        <!-- Yuri -->
+        <div class="member-profile">
+            <img src="image/yuri.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>权俞利 Yuri ❄️</h2>
+                <p>黑珍珠 / 呆子</p>
+                <p>✨ 成员都说我没眼力见</p>
+            </div>
+        </div>
+
+        <!-- Sooyung -->
+        <div class="member-profile">
+            <img src="image/sooyung.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>崔秀英 Sooyung ❄️</h2>
+                <p>明朗少女 / 崔有毒</p>
+                <p>✨ 没有有毒不敢怼的人</p>
+            </div>
+        </div>
+
+        <!-- Yoona -->
+        <div class="member-profile">
+            <img src="image/yoona.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>林允儿 Yoona ❄️</h2>
+                <p>魅力少女 / 鳄鱼允</p>
+                <p>✨ 允儿 你是门面啊 注意形象</p>
+            </div>
+        </div>
+
+        <!-- Seohyun -->
+        <div class="member-profile">
+            <img src="image/seohyun.jpg" alt="Jessica" class="member-photo">
+            <div>
+                <h2>徐珠贤 Seohyun ❄️</h2>
+                <p>忙内 / 小贤</p>
+                <p>✨ 忙内最后还是被姐姐们带轰了</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- 团体照区域 -->
+    <div class="group-photo-section">
+        <h2>SNSD FOREVER 1 🌸</h2>
+        <img src="image/group-photo.jpg" alt="团体照" class="group-photo">
+        <p>2022 —— 15years</p>
+    </div>
+
+    <section class="external-links">
+        <div class="link-card" onclick="window.open('official.html', '_blank')">
+            <i class="fas fa-star"></i>
+            <h3>官方信息</h3>
+            <p>点击查看SM官方资料</p>
+        </div>
+        
+        <div class="link-card" onclick="window.open('https://www.bilibili.com/video/BV1o24y1Q7jS/?spm_id_from=333.337.search-card.all.click&vd_source=bcd9d10e8f5f48cc7070a9b675979848', '_blank')">
+            <i class="fab fa-youtube"></i>
+            <h3>YouTube频道</h3>
+            <p>观看最新MV</p>
+        </div>
+    </section>
+</body>
+</html>
