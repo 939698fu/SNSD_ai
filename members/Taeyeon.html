@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>金泰妍 | 少女时代主唱</title>
+    <link rel="stylesheet" href="../css/taeyeon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 固定导航 -->
+    <nav class="member-nav">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-chevron-left"></i> 返回成员列表
+        </a>
+        <div class="nav-title">TAEYEON 💎</div>
+    </nav>
+
+    <!-- 顶部展示区 -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>金泰妍 Kim Taeyeon</h1>
+            <p class="subtitle">少女时代 Leader / 信听主唱</p>
+            <div class="badge-group">
+                <span class="badge">✨ 历代级主唱</span>
+                <span class="badge">💿 音源女王</span>
+                <span class="badge">🏆 大满贯得主</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 内容容器 -->
+    <main class="content-container">
+        <!-- 音乐作品 -->
+        <section class="discography">
+            <h2 class="section-title"><i class="fas fa-music"></i> 代表作品</h2>
+            <div class="album-grid">
+                <div class="album-card">
+                    <img src="../images/albums/i.jpg" alt="I专辑">
+                    <div class="album-info">
+                        <h3>I (2015)</h3>
+                        <p>首张个人专辑</p>
+                        <button class="play-btn" data-src="i.mp3">试听片段</button>
+                    </div>
+                </div>
+                <!-- 其他专辑卡片 -->
+            </div>
+        </section>
+
+        <!-- 时间线 -->
+        <section class="timeline-section">
+            <h2 class="section-title"><i class="fas fa-history"></i> 重要时刻</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2007.08.05</div>
+                    <div class="timeline-content">以少女时代队长身份出道</div>
+                </div>
+                <!-- 其他时间线条目 -->
+            </div>
+        </section>
+
+        <!-- 照片墙 -->
+        <section class="gallery">
+            <h2 class="section-title"><i class="fas fa-camera"></i> 视觉盛宴</h2>
+            <div class="masonry-grid">
+                <div class="gallery-item">
+                    <img src="../images/taeyeon/concert.jpg" alt="演唱会">
+                    <div class="hover-info">2019 个人演唱会</div>
+                </div>
+                <!-- 其他图片 -->
+            </div>
+        </section>
+
+        <!-- 视频合集 -->
+        <section class="video-collection">
+            <h2 class="section-title"><i class="fas fa-video"></i> 经典现场</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/4OrCA_8fX6Q" allowfullscreen></iframe>
+                    </div>
+                    <p>《Fine》MMA 2017 现场</p>
+                </div>
+                <!-- 其他视频 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="member-footer">
+        <div class="social-links">
+            <a href="https://instagram.com/taeyeon_ss" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/taeyeonofficial" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p>© 2023 SONE Community. All rights reserved.</p>
+    </footer>
+
+    <!-- 音乐播放器 -->
+    <div class="audio-player">
+        <audio id="main-audio"></audio>
+        <div class="player-controls">
+            <button id="play-pause"><i class="fas fa-play"></i></button>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/taeyeon.js"></script>
+</body>
+</html>
